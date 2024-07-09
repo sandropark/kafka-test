@@ -24,7 +24,7 @@ public class Consumer {
             if (value.equals("message-5")) throw new RuntimeException("error");
 
             log.info("offset: {}, value: {}", record.offset(), value);
-            ack.acknowledge();
+//            ack.acknowledge();
         });
 
     }
