@@ -16,7 +16,7 @@ public class ProducerController {
 
     @PostMapping
     public void produce() {
-        for (int i = 0; i < 10; i++)
-            producer.send("my-topic", "message-" + count++);
+        for (int i = 0; i < 1000; i++)
+            producer.send("my-topic", "message-" + i);
     }
 }
